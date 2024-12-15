@@ -21,9 +21,16 @@
 #define WireSensor Wire1
 #define WireQT Wire
 
-#define LoRa_AUX 29
-#define LoRa_M0 28
-#define LoRa_M1 27
+#define LoRa_AUX 29 //input
+#define LoRa_M0 28 //output, weak pull-up
+#define LoRa_M1 27 //output, weak pull-up
+/*
+  M0  M1  Mode
+  0   0   Normal
+  0   1   Wake On Radio (transmit)
+  1   0   Wake On Radio (receive)
+  1   1   Configuration/Deep Sleep
+*/
 #define Batt_Voltage 26
 #define Button 23 //active low
 
