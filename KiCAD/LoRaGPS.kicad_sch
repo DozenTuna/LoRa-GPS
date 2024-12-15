@@ -4555,10 +4555,9 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "297d32d5-6f79-40ac-bd9a-2d2d5559375b")
 		(property "Reference" "JP3"
-			(at 73.66 143.5565 0)
+			(at 73.66 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4566,7 +4565,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 73.66 145.9808 0)
+			(at 73.66 144.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4830,18 +4829,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "40b0e8d4-32c9-4236-af69-4675337953fa")
 		(property "Reference" "R10"
-			(at 212.09 124.3795 90)
+			(at 212.09 131.826 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 212.09 126.8038 90)
+		(property "Value" "3.3k"
+			(at 212.09 134.2503 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4898,18 +4896,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4f98d843-a982-4f62-920b-83b7c6011b7c")
 		(property "Reference" "R4"
-			(at 64.6895 172.72 90)
+			(at 67.818 172.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 67.1138 172.72 90)
+		(property "Value" "10k"
+			(at 72.136 172.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5177,7 +5174,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 72.898 124.4021 0)
 			(effects
 				(font
@@ -5382,18 +5379,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "69a20c74-1441-46e0-a8ec-0b7287990d9f")
 		(property "Reference" "R2"
-			(at 78.74 135.8095 90)
+			(at 78.74 138.938 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 78.74 138.2338 90)
+		(property "Value" "10k"
+			(at 78.74 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6271,10 +6267,9 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "90b7f662-ba5f-46e2-8d4e-3c7f46b986b0")
 		(property "Reference" "JP5"
-			(at 82.1691 165.1578 90)
+			(at 81.534 168.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6283,7 +6278,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 82.1691 167.5821 90)
+			(at 79.502 182.372 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6628,7 +6623,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 212.09 124.2638 90)
 			(effects
 				(font
@@ -6995,10 +6990,9 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c69d2acc-1250-4dd6-9e46-b7bf65933e80")
 		(property "Reference" "JP2"
-			(at 87.63 135.9365 0)
+			(at 87.63 138.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7006,7 +7000,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 87.63 138.3608 0)
+			(at 94.742 136.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7068,7 +7062,7 @@
 		(dnp no)
 		(uuid "d23d270b-fe9c-4f8b-9a86-837df5a0ca29")
 		(property "Reference" "JP4"
-			(at 64.8165 163.83 0)
+			(at 67.818 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7076,7 +7070,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 67.2408 163.83 0)
+			(at 65.278 164.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7202,18 +7196,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d8fb42e7-ca7c-448f-933a-af8dace875bb")
 		(property "Reference" "R3"
-			(at 64.77 143.4295 90)
+			(at 64.77 146.304 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 64.77 145.8538 90)
+		(property "Value" "10k"
+			(at 64.77 150.622 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7348,7 +7341,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 85.598 176.4721 0)
 			(effects
 				(font
