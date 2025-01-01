@@ -27,19 +27,24 @@
 #define Batt_Voltage 26
 #define Button 23 //active low
 
-int i2c_read(int device_addr, unsigned int reg_addr){
-  Wire.beginTransmission(device_addr);
-  Wire.write(reg_addr);
-  Wire.endTransmission();
-  Wire.requestFrom(device_addr, 1);
-  return Wire.read();
+void writeEEPROM(int addr, int data) {
+  WireSensor.beginTransmission(Addr_EEPROM);
+  WireSensor.write((int)(addr >> 8)); // MSB
+  WireSensor.write((int)(addr & 0xFF)); // LSB
+  WireSensor.write(data);
+  WireSensor.endTransmission();
 }
-
-void i2c_write(int device_addr, unsigned int reg_addr, unsigned int data){
-  Wire.beginTransmission(device_addr);
-  Wire.write(reg_addr);
-  Wire.write(data);
-  Wire.endTransmission();
+int readEEPROM(int addr) {
+  WireSensor.beginTransmission(Addr_EEPROM);
+  WireSensor.write((int)(addr >> 8)); // MSB
+  WireSensor.write((int)(addr & 0xFF)); // LSB
+  WireSensor.endTransmission();
+  WireSensor.requestFrom(Addr_EEPROM, 1);
+  int data = 0;
+  while (WireSensor.available()) {
+    data = WireSensor.read();
+  }
+  return data;
 }
 
 void setup() {
@@ -63,20 +68,17 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  analogWrite(LED_R, 255);
-  analogWrite(LED_G, 255);
-  analogWrite(LED_B, 255);
-  // digitalWrite(LED_R, HIGH);
-  // digitalWrite(LED_G, HIGH);
-  // digitalWrite(LED_B, HIGH);
+  for (size_t i = 0; i < 100; i++)
+  {
+    writeEEPROM(i,i);
+    delay(5);
+  }
+  Serial.println("EEPROM write complete");
+  for (size_t i = 0; i < 100; i++)
+  {
+    Serial.println(readEEPROM(i));
+    delay(5);
+  }
+  Serial.println("EEPROM read complete");
   delay(1000);
-  analogWrite(LED_R, 230);
-  analogWrite(LED_G, 230);
-  analogWrite(LED_B, 230);
-  // digitalWrite(LED_R, LOW);
-  // digitalWrite(LED_G, LOW);
-  // digitalWrite(LED_B, LOW);
-  delay(1000);
-  Serial.println("loop");
 }
